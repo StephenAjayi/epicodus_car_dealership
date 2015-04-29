@@ -1,8 +1,28 @@
 class Vehicle
-  define_method(:initialize) do |name|
-    @name = name
+  define_method(:initialize) do |make, model, year|
+
+    @make = make
+    @model = model
+    @year = year
+
   end
-  define_method(:car_name) do
-    @name
+
+  def make
+
+    @make
+
   end
+
+  define_method(:model) do
+
+    @model
+
+  end
+
+  def year
+
+    @year
+
+  end
+
 end
